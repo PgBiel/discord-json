@@ -7,7 +7,7 @@ bot.on("message", (message) => {
 		const reactions = ["💯", "🇯", "🇸", "🇴", "🇳", "👌"];
 
 		function react() {
-			if(reactions.length === 0) { return; }
+			if(reactions.length === 0) return;
 			message.react(reactions[0])
 			.then(() => {
 				reactions.shift();
