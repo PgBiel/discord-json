@@ -14,7 +14,7 @@ bot.on("message", (message) => {
 				react();
 			})
 			.catch((err) => {
-				console.error("ERROR REACTING FeelsBadMan");
+				console.error(`Error reacting: ${err}`);
 			});
 		}
 		react();
